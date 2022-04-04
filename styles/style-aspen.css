@@ -1,0 +1,22 @@
+#container {
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 5rem;
+}
+
+
+/* Add some content at the bottom of the video/page */
+.content {
+    position: absolute;
+    top: 80%;
+    z-index: 100;
+    font-size: 2vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.473);
+    color: #f1f1f1;
+    width: 100vw;
+    padding: 3.5rem;
+}

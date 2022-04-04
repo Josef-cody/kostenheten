@@ -1,0 +1,39 @@
+
+
+@media(min-width:600px) {
+    .body {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.main {
+    width: 80%;
+    margin: 3% auto;
+}
+
+.main:after {
+    content: "";
+    height: 0;
+    clear: both;
+    overflow: hidden;
+    display: block;
+    visibility: hidden;
+}
+
+@media(min-width:800px) {
+    .card {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.card {
+    width: 80%;
+    margin: 2rem auto;
+}
+
+.card-box {
+    flex-basis: 33%;
+    margin-bottom: 2rem;
+}

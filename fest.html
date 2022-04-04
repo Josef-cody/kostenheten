@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centralskolankoket</title>
+    <link rel="stylesheet" href="./styles/style-public.css">
+    <link rel="stylesheet" href="./styles/style-header and footer.css">
+    <link rel="stylesheet" href="./styles/style-fest.css">
+</head>
+
+<body style="background: url(../image/background.png);">
+    <header class="header">
+        <div class="topnav" id="myTopnav">
+            <img class="logo" src="./image/Tierp2, färg, två rader.png" alt="">
+            <a href="./index.html">Hem</a>
+            <a href="./vem vi ar.html">Vem vi är</a>
+            <a href="./kontakt.html">Kontakt</a>
+            <div class="dropdown">
+                <button class="dropbtn">Galleri
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="./fest.html">Fest</a>
+                    <a href="./om maten.html">Om maten</a>
+                    <a href="#">Video</a>
+                </div>
+            </div>
+            <a href="./recept/recept.html">Recept</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+    </header>
+
+    <!-- //top scroll -->
+    <button onclick="topFunction()" id="goTop" title="Go to top">Top</button>
+
+
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("goTop");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <main class="main">
+
+        <section class="section">
+
+            <div style="margin-right: 3vw;" class="card-box">
+                <h1>Grill fest med kycklingbiffar
+                </h1>
+                <p style="padding: 1vw 0; font-size: 1.5vw;">Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. Ratione eaque quasi tempora eveniet
+                    optio. Nulla dicta aspernatur</p>
+            </div>
+            <video class="imgbox"
+                style="border-bottom: 10px solid rgb(143, 0, 0);border-left: 10px solid rgb(143, 0, 0);" controls
+                width="250" src="./videos/grilla biffar.mp4"></video>
+
+        </section>
+        <section class="section">
+            <video class="imgbox"
+                style="margin-right: 3vw; border-top: 10px solid rgb(143, 0, 0);border-right: 10px solid rgb(143, 0, 0);"
+                controls width="250" src="./videos/jul2019.mp4"></video>
+            <div class="card-box">
+                <h1>JUL Fest 2019
+                </h1>
+                <p style="padding: 1vw 0; font-size: 1.5vw;">Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. Ratione eaque quasi tempora eveniet
+                    optio. Nulla dicta aspernatur</p>
+            </div>
+        </section>
+        <section class="section">
+
+            <div style="margin-right: 3vw;" class="card-box">
+                <h1>Pizza Fest 2021
+                </h1>
+                <p style="padding: 1vw 0; font-size: 1.5vw;">Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. Ratione eaque quasi tempora eveniet
+                    optio. Nulla dicta aspernatur</p>
+            </div>
+            <video class="imgbox" style="border-top: 10px solid rgb(143, 0, 0);border-left: 10px solid rgb(143, 0, 0);"
+                controls width="250" src="./videos/pizza fest.mp4"></video>
+
+        </section>
+        <section class="section">
+            <video class="imgbox"
+                style="margin-right: 3vw;border-top: 10px solid rgb(143, 0, 0);border-right: 10px solid rgb(143, 0, 0);"" controls width="
+                250" src="./videos/skolavslut.mp4"></video>
+            <div class="card-box">
+                <h1>Skloan avslutning 2019
+                </h1>
+                <p style="padding: 1vw 0; font-size: 1.5vw;">Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. Ratione eaque quasi tempora eveniet
+                    optio. Nulla dicta aspernatur</p>
+            </div>
+        </section>
+        <section class="section">
+
+            <div style="margin-right: 2rem;" class="card-box">
+                <h1>JUL Fest 2020
+                </h1>
+                <p style="padding: 1vw 0; font-size: 1.5vw;">Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. Ratione eaque quasi tempora eveniet
+                    optio. Nulla dicta aspernatur</p>
+            </div>
+            <video class="imgbox" style="border-top: 10px solid rgb(143, 0, 0);border-left: 10px solid rgb(143, 0, 0);"
+                controls width="250" src="./videos/jul2020.mp4"></video>
+
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div>
+                <ul class="foot">
+                    <li><a href="http://www.tierp.se">Tierp.se</a></li>
+                    <li><a href="http://webmenu.foodit.se/?r=3&m=360&p=580&c=10110&w=0&v=Week">Matsedel</a></li>
+                    <li><a
+                            href="https://www.tierp.se/tierp.se/forskola-och-utbildning/skolbarn-6-16-ar/mat-i-skolan.html">Specialkost</a>
+                    </li>
+                    <li><a href="./vem vi ar.html">About Us</a></li>
+                    <li><a href="https://www.livsmedelsverket.se/">Livsmedelsverket</a></li>
+                </ul>
+            </div>
+            <h5
+                style="text-align: center; font-size: 2vmin; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; background-color: rgb(0, 0, 0); color: white; padding: 30px;">
+                © 2022 Josef.Abliz
+                .All Rights reserved &nbsp TIERPS KOMMUN Centralskolankoket</h5>
+        </div>
+
+    </footer>
+</body>
+
+</html>

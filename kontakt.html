@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centralskolanskoket</title>
+    <link rel="stylesheet" href="./styles/style-public.css">
+    <link rel="stylesheet" href="./styles/style-header and footer.css">
+    <link rel="stylesheet" href="./styles/style_kotakt.css">
+</head>
+
+<body style="background: url(../image/background.png);">
+    <header class="header">
+        <div class="topnav" id="myTopnav">
+            <img class="logo" src="./image/Tierp2, färg, två rader.png" alt="">
+            <a href="./index.html">Hem</a>
+            <a href="./vem vi ar.html">Om oss</a>
+            <a href="./kontakt.html">Kontakt</a>
+            <a href="./recept/recept.html">Recept</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+    </header>
+    <main class="main">
+        <div class="container">
+            <form action="https://getform.io/f/84b208cd-7623-4e4b-ba3d-2fc8d4b18318" method="post">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">Först Namn</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="fname" name="firstname" placeholder="först namn..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="lname">Efter Namn</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="lname" name="lastname" placeholder="efter namn..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="e-mail">E-post</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="email" name="email" id="email" placeholder="E-post adressen.. ">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="subject">Meddlande</label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="subject" name="subject" placeholder="Hur kan vi hjälpa dig.."
+                            style="height:200px"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <div>
+                <ul class="foot">
+                    <li><a href="http://www.tierp.se">Tierp.se</a></li>
+                    <li><a href="http://webmenu.foodit.se/?r=3&m=360&p=580&c=10110&w=0&v=Week">Matsedel</a></li>
+                    <li><a
+                            href="https://www.tierp.se/tierp.se/forskola-och-utbildning/skolbarn-6-16-ar/mat-i-skolan.html">Specialkost</a>
+                    </li>
+                    <li><a href="https://www.livsmedelsverket.se/">Livsmedelsverket</a></li>
+                </ul>
+            </div>
+            <h5
+                style="text-align: center; font-size: 2vmin; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; background-color: rgb(0, 0, 0); color: white; padding: 30px;">
+                © 2022 Josef.Abliz
+                .All Rights reserved &nbsp TIERPS KOMMUN KOSTENHETEN</h5>
+        </div>
+
+    </footer>
+</body>
+
+</html>

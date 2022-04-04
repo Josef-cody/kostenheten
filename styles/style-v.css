@@ -1,0 +1,225 @@
+.main {
+    width: 100%;
+}
+
+.imgbox {
+    margin: 3rem auto;
+    box-shadow: 1px 1px 2px rgb(100, 100, 100), 0 0 25px rgb(100, 100, 100), 0 0 5px rgb(100, 100, 100);
+}
+
+.card-box {
+    width: 80%;
+    /* min-width: 450px; */
+    background-color: rgba(255, 255, 255, 0.902);
+    color: rgb(0, 0, 0);
+    margin: auto;
+    font-size: 2vw;
+    box-shadow: 1px 1px 2px rgb(100, 100, 100), 0 0 25px rgb(100, 100, 100), 0 0 5px rgb(100, 100, 100);
+    padding: 5vw;
+}
+
+.main:after {
+    content: "";
+    height: 0;
+    clear: both;
+    overflow: hidden;
+    display: block;
+    visibility: hidden;
+}
+
+/* @mixin for-phone-only { */
+@media (max-width: 599px) {
+    .section {
+        width: 100%;
+        margin-bottom: 10rem;
+    }
+
+    .imgbox {
+        width: 100%;
+        margin: 2rem auto;
+    }
+
+    .card-box {
+        width: 80%;
+    }
+
+    .foot {
+        display: flex;
+
+    }
+
+    .foot li a {
+        font-size: 2vw;
+    }
+
+}
+
+/* @mixin for-tablet-portrait-up { */
+@media (min-width: 600px) {
+    .section {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10rem;
+    }
+
+    .card-box {
+        width: 60%;
+
+    }
+
+    .imgbox {
+        width: 100%;
+        margin: 2rem auto;
+    }
+
+    .foot {
+        display: flex;
+
+    }
+
+    .foot li a {
+        font-size: 2vw;
+    }
+}
+
+/* @mixin for-tablet-portait-only { */
+@media (min-width: 600px) and (max-width: 899px) {
+    .section {
+        display: block;
+        justify-content: space-between;
+
+    }
+
+    .card-box {
+        width: 100%;
+
+    }
+
+    .foot {
+        display: flex;
+
+    }
+
+    .foot li a {
+        font-size: 2vw;
+    }
+}
+
+
+/* @mixin for-tablet-landscape-up { */
+@media (min-width: 900px) {
+
+    .section {
+        display: block;
+        margin-bottom: 10rem;
+    }
+
+    .card-box {
+        width: 60%;
+
+    }
+
+    .imgbox {
+        width: 100%;
+        margin: 2rem auto;
+    }
+
+    .foot {
+        display: flex;
+
+    }
+
+    .foot li a {
+        font-size: 2vw;
+    }
+}
+
+/* @mixin for-tablet-landscape-only { */
+@media (min-width: 900px) and (max-width: 1199px) {
+    .section {
+        /* display: flex; */
+        justify-content: space-between;
+    }
+
+    .foot {
+        display: flex;
+
+    }
+
+    .foot li a {
+        font-size: 2vw;
+    }
+}
+
+/* @mixin for-desktop-up { */
+@media (min-width: 1200px) {
+    .section {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .foot {
+        display: flex;
+
+    }
+
+    .foot li a {
+        font-size: 1.5vw;
+    }
+}
+
+/* @mixin for-desktop-only { */
+@media (min-width: 1200px) and (max-width: 1799px) {
+    .section {
+        display: flex;
+        justify-content: space-between;
+        margin: 5rem auto;
+    }
+
+    .card-box {
+        width: 50%;
+        margin-left: 2rem;
+    }
+
+    .imgbox {
+        width: 100%;
+    }
+
+    .foot {
+        display: flex;
+
+    }
+
+    .foot li a {
+        font-size: 1.5vw;
+    }
+}
+
+/* @mixin for-big-desktop-up { */
+@media (min-width: 1800px) {
+    .section {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 22rem;
+        margin-left: 5rem;
+    }
+
+    .card-box {
+        width: 50%;
+        margin-left: 2rem;
+    }
+
+    .imgbox {
+        width: 100%;
+
+    }
+
+    .foot {
+        display: flex;
+
+    }
+
+    .foot li a {
+        font-size: 1.5vw;
+    }
+}

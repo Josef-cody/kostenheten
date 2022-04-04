@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TierpskommunKostenheten</title>
+    <link rel="stylesheet" href="./styles/style-public.css">
+    <link rel="stylesheet" href="./styles/style-index.css">
+    <link rel="stylesheet" href="./styles/style-folj oss.css">
+    <link href="./icons/css/fontawesome.css" rel="stylesheet">
+    <link href="./icons/css/brands.css" rel="stylesheet">
+    <link href="./icons/css/solid.css" rel="stylesheet">
+    <link href="./icons/css/all.css" rel="stylesheet">
+</head>
+
+<body class="mainbody">
+    <header class="header">
+        <div class="topnav" id="myTopnav">
+            <img class="logo" src="./image/Tierp2, färg, två rader.png" alt="">
+            <a href="./index.html">Hem</a>
+            <a href="./kontakt.html">Kontakt</a>
+            <a href="./recept/recept.html">Recept</a>
+            <a href="./vem vi ar.html">Om oss</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+        <script>
+            function myFunction() {
+                let x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+    </header>
+    <!-- //top scroll -->
+    <button onclick="topFunction()" id="goTop" title="Go to top">Top</button>
+
+
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("goTop");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <main class="main">
+        <div class="content">
+            <h1>TIERPS KOMMUN KOSTENHETEN</h1>
+            <p style="font-size: 1vw; padding: 2vw;">Tierps kommun är en grön och harmonisk oas för hela livet.
+                Här förenas landsbygdens lugn med närheten till storstadens puls.</p>
+        </div>
+        <div id="container">
+            <video style="position: absolute; top: -20px; left: -1%;" id="videobcg" preload="auto" autoplay="true"
+                loop="loop" muted volume="0">
+                <source src="./videos/herovideo.mp4" type="video/mp4"> Sorry, your browser does not support HTML5
+                video.
+            </video>
+        </div>
+        <form class="choosekoket">
+            <label for="köket">Välja Köket &nbsp</label>
+            <select name="koket" id="koket" onchange="location = this.value;">
+                <option value="nothing"></option>
+                <option value="Centralskolanskoket.html">CENTRALSKOLANSKÖKET</option>
+                <option value="aspenkoket.html">ASPENSKOLANSKÖKET</option>
+                <option value="#">ÖRBYHUSSKOLANSKÖKET</option>
+                <option value="#">WESSLANDIA</option>
+                <option value="#">OL ANDERSSKOLANSKÖKET</option>
+                <option value="#">BRUKSSKOLANSKÖKET</option>
+            </select></form>
+        <div class="card">
+            <section class="section">
+                <div><img class="imgbox" src="./image/lagamat.jpg" alt=""></div>
+                <div class="card-box">
+                    <h4 style="color: darkred;margin: 1vw;">Om oss</h4><br>
+                    <h2 style="text-align: left;">Tierps kommun Kostenheten</h2><br>
+                    <p style="padding: 2vw 0; font-size: 14px;">Inom kommunen tillagas varje dag ca 4500 portioner mat
+                        vilka serveras inom förskolan, skolan, äldreomsorgen och hemtjänsten. <br><br>
+
+                        Maten lagas på de nio tillagningskök som är geografiskt utspridda i kommunen för att täcka
+                        behovet. <br><br>
+
+                        Hälsa ,miljö och hållbarhet är i fokus i mat vårt arbete. <br><br>
+
+                        Det innefattar att erbjuda hälsosamma och näringsriktiga måltider men även att fylla ett
+                        pedagogiskt och lärande syfte för de som i slutändan konsumerar maten. <br><br>
+
+                        Det innefattar även att arbeta för minskad klimatpåverkan, ökad andel gröna rätter samt minskat
+                        matsvinn, i enlighet med Agenda 2030. <br><br><br>
+
+                        <em>Mat ska älskas inte kastas!</em></p>
+                    <a class="link1" href="./hurviarbeta.html">
+                        <p>Läs mer om hur vi arbeta <i class="fa-solid fa-circle-chevron-right"></i></p>
+                    </a>
+                </div>
+            </section>
+            <div style="border-top: 2px solid rgb(196, 196, 196);">
+                <div class="intro">
+                    <h1>Kommunens värdeord</h1>
+                    <p>Vi som arbetar inom kostenheten ska i alla situationer i vårt förhållningssätt utgå från
+                        kommunens värdeord</p>
+                </div>
+            </div>
+            <section class="section-2">
+                <div class="ord">
+                    <img class="ord-img" style="border-bottom: 10px solid rgb(255, 125, 0);" src="./image/respekt.jpg"
+                        alt="">
+                    <div style="background-color: rgb(255, 125, 0);">
+                        <h3>Respekt </h3>
+                        <p>Behandla andra som du själv vill bli behandlad. För en dialog, ge
+                            varandra plats och delta aktivt. Passa tider och håll överenskommelser.</p>
+                    </div>
+                </div>
+                <div class="ord">
+                    <img class="ord-img" style="border-bottom: 10px solid rgb(120, 0, 255);" src="./image/Ansvar.jpg"
+                        alt="">
+                    <div style="background-color: rgb(120,0, 255);">
+                        <h3>Ansvar </h3>
+                        <p>Var lojal, stå för fattade beslut och ta ansvar för helheten. Initiera
+                            frågor, delge dina erfarenheter och prioritera tillsammans.</p>
+                    </div>
+                </div>
+                <div class="ord">
+                    <img class="ord-img" style="border-bottom: 10px solid rgb(34, 146, 0);"
+                        src="./image/Framtidstro.jpg" alt="">
+                    <div style="background-color: rgb(34, 146, 0);">
+                        <h3>Framtidstro </h3>
+                        <p>Lär av det förgångna men blicka framåt. <br> Utvärdera arbetet, fastna
+                            inte i nuet och planera framåt. <br><br></p>
+                    </div>
+                </div>
+                <div class="ord">
+                    <img class="ord-img" style="border-bottom: 10px solid rgb(0, 102, 255);" src="./image/kundfukus.jpg"
+                        alt="">
+                    <div style="background-color: rgb(0, 102, 255);">
+                        <h3>Kundfokus</h3>
+                        <p>Fundera hur ditt eget handlande
+                            överensstämmer med och påverkar helheten och medborgarnyttan. <br><br> </p>
+                    </div>
+                </div>
+                <div class="ord">
+                    <img class="ord-img" style="border-bottom: 10px solid rgb(235, 0, 255);" src="./image/mod.jpg"
+                        alt="">
+                    <div style="background-color: rgb(235, 0, 255);">
+                        <h3>Mod</h3>
+                        <p>Våga göra annorlunda. Tänk nytt och ompröva. Ifrågasätt ditt eget
+                            och andras arbete på ett konstruktivt sätt, stötta varandra.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="section-3">
+                <h1>Följ Oss</h1>
+                <a href="https://www.instagram.com/nyacentralkoket/"><i class="fa-brands fa-instagram"></i>&nbsp
+                    CENTRALSKOLANSKÖKET</a>&nbsp &nbsp
+                <a href="https://www.instagram.com/matiorbyhus/"><i class="fa-brands fa-instagram"></i>&nbsp
+                    ÖRBYHUSSKOLANSKÖKET</a>&nbsp &nbsp
+                <a href="https://www.instagram.com/skolmat_vendel/"><i class="fa-brands fa-instagram"></i>&nbsp
+                    VENDELSKOLANKÖKET</a>&nbsp &nbsp
+                <a href="https://www.youtube.com/channel/UCI1wNW0_2ZeZO8woJ-U3Q8w"><i
+                        class="fa-brands fa-youtube"></i>&nbsp YOUTEBE KANEL</a>
+            </section>
+
+    </main>
+    <footer>
+        <div class="footer">
+            <div>
+                <ul class="foot">
+                    <li><a href="http://www.tierp.se">Tierp.se</a></li>
+                    <li><a href="http://webmenu.foodit.se/?r=3&m=360&p=580&c=10110&w=0&v=Week">Matsedel</a></li>
+                    <li><a
+                            href="https://www.tierp.se/tierp.se/forskola-och-utbildning/skolbarn-6-16-ar/mat-i-skolan.html">Specialkost</a>
+                    </li>
+                    <li><a href="https://www.livsmedelsverket.se/">Livsmedelsverket</a></li>
+                </ul>
+            </div>
+            <h5
+                style="text-align: center; font-size: 2vmin; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; background-color: rgb(0, 0, 0); color: white; padding: 30px;">
+                © 2022 Josef.Abliz
+                .All Rights reserved &nbsp TIERPS KOMMUN Centralskolankoket</h5>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

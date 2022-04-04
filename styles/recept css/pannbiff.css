@@ -1,0 +1,25 @@
+@media screen and (min-width:600px) {
+    .hero{
+        display: flex;
+        justify-content: space-between;
+    }  
+}
+.hero{
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+
+.recept{
+    width: 100%;
+    align-self:flex-start;
+    background-color: rgba(255, 255, 255, 0.896);
+}
+.recept h1{
+    padding: 3rem;
+    font-size: 6vw;
+}
+.recept p{
+    font-size: 1.2vw;
+    text-align: justify;
+    padding: 2rem;
+}

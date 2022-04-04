@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centralskolanskoket</title>
+    <link rel="stylesheet" href="./styles/style-public.css">
+    <link rel="stylesheet" href="./styles/style-header and footer.css">
+    <link rel="stylesheet" href="./styles/style-ommat.css">
+</head>
+
+<body style="background: url(../image/background.png);">
+    <header class="header">
+        <div class="topnav" id="myTopnav">
+            <img class="logo" src="./image/Tierp2, färg, två rader.png" alt="">
+            <a href="./index.html">Hem</a>
+            <a href="./vem vi ar.html">Vem vi är</a>
+            <a href="./kontakt.html">Kontakt</a>
+            <div class="dropdown">
+                <button class="dropbtn">Galleri
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="./fest.html">Fest</a>
+                    <a href="./om maten.html">Om maten</a>
+                    <a href="#">Video</a>
+                </div>
+            </div>
+            <a href="./recept/recept.html">Recept</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+        
+         <button onclick="topFunction()" id="goTop" title="Go to top">Top</button>
+         <script>
+             //Get the button
+             var mybutton = document.getElementById("goTop");
+     
+             // When the user scrolls down 20px from the top of the document, show the button
+             window.onscroll = function () {
+                 scrollFunction()
+             };
+     
+             function scrollFunction() {
+                 if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                     mybutton.style.display = "block";
+                 } else {
+                     mybutton.style.display = "none";
+                 }
+             }
+     
+             // When the user clicks on the button, scroll to the top of the document
+             function topFunction() {
+                 document.body.scrollTop = 0;
+                 document.documentElement.scrollTop = 0;
+             }
+         </script>
+    </header>
+    <!-- //top scroll -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <main class="main">
+        <div class="card">
+            <div class="card-box">
+                <img style="padding: 0; margin: 0; width: 100%;" src="./image/ommat/agg.jpg" alt="">
+                <p
+                    style="background-color: rgb(0, 0, 0); border: 5px solid rgb(255, 200, 0);color:white; padding: 20px; text-align: justify;">
+                    Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. Ratione eaque quasi tempora eveniet
+                    optio. Nulla dicta aspernatur</p>
+            </div>
+            <div class="card-box">
+                <a href="./recept/pannbiff.html"><img style="padding: 0; margin: 0; width: 100%;"
+                        src="./image/ommat/biffar.jpg" alt="">
+                    <p style="background-color: rgb(0, 0, 0); color:white; padding: 20px; text-align: justify;
+                    border: 5px solid rgb(255, 200, 0); ">Lorem
+                        ipsum dolor sit amet consectetur adipisicing elit. Ratione eaque quasi tempora eveniet
+                        optio. Nulla dicta aspernatur</p>
+                </a>
+            </div>
+
+            <div class="card-box"><img style="padding: 0; margin: 0; width: 100%;" src="./image/ommat/brod.jpg" alt="">
+                <p
+                    style="background-color: rgb(0, 0, 0); color:white; padding: 20px; text-align: justify;border: 5px solid rgb(255, 200, 0);">
+                    Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. Ratione eaque quasi tempora eveniet
+                    optio. Nulla dicta aspernatur</p>
+            </div>
+
+        </div>
+        <div class="card">
+            <div class="card-box"> <img style="padding: 0; margin: 0; width: 100%;" src="./image/ommat/falafel.jpg"
+                    alt="">
+                <p
+                    style="background-color: rgb(0, 0, 0); border: 5px solid rgb(255, 200, 0);color:white; padding: 20px; text-align: justify;">
+                    Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. Ratione eaque quasi tempora eveniet
+                    optio. Nulla dicta aspernatur</p>
+            </div>
+            <div class="card-box"> <img style="padding: 0; margin: 0; width: 100%;" src="./image/ommat/farsbiffar.jpg"
+                    alt="">
+                <p style="background-color: rgb(0, 0, 0); color:white; padding: 20px; text-align: justify;
+                    border: 5px solid rgb(255, 200, 0); ">Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. Ratione eaque quasi tempora eveniet
+                    optio. Nulla dicta aspernatur</p>
+            </div>
+            <div class="card-box"> <img style="padding: 0; margin: 0; width: 100%;" src="./image/ommat/fiskbiffar.jpg"
+                    alt="">
+                <p
+                    style="background-color: rgb(0, 0, 0); color:white; padding: 20px; text-align: justify;border: 5px solid rgb(255, 200, 0);">
+                    Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. Ratione eaque quasi tempora eveniet
+                    optio. Nulla dicta aspernatur</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-box"> <img style="padding: 0; margin: 0; width: 100%;" src="./image/ommat/fiskgryta.jpg"
+                    alt="">
+                <p
+                    style="background-color: rgb(0, 0, 0); border: 5px solid rgb(255, 200, 0);color:white; padding: 20px; text-align: justify;">
+                    Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. Ratione eaque quasi tempora eveniet
+                    optio. Nulla dicta aspernatur</p>
+            </div>
+            <div class="card-box"> <img style="padding: 0; margin: 0; width: 100%;" src="./image/ommat/gulbetor.jpg"
+                    alt="">
+                <p style="background-color: rgb(0, 0, 0); color:white; padding: 20px; text-align: justify;
+                    border: 5px solid rgb(255, 200, 0); ">Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. Ratione eaque quasi tempora eveniet
+                    optio. Nulla dicta aspernatur</p>
+            </div>
+            <div class="card-box"> <img style="padding: 0; margin: 0; width: 100%;" src="./image/ommat/kebab roll.jpg"
+                    alt="">
+                <p
+                    style="background-color: rgb(0, 0, 0); color:white; padding: 20px; text-align: justify;border: 5px solid rgb(255, 200, 0);">
+                    Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. Ratione eaque quasi tempora eveniet
+                    optio. Nulla dicta aspernatur</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-box"><img style="padding: 0; margin: 0; width: 100%;" src="./image/ommat/korvmos.jpg"
+                    alt="">
+                <p
+                    style="background-color: rgb(0, 0, 0); border: 5px solid rgb(255, 200, 0);color:white; padding: 20px; text-align: justify;">
+                    Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. Ratione eaque quasi tempora eveniet
+                    optio. Nulla dicta aspernatur</p>
+            </div>
+            <div class="card-box"> <img style="padding: 0; margin: 0; width: 100%;" src="./image/ommat/kratongen.jpg"
+                    alt="">
+                <p style="background-color: rgb(0, 0, 0); color:white; padding: 20px; text-align: justify;
+                        border: 5px solid rgb(255, 200, 0); ">Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. Ratione eaque quasi tempora eveniet
+                    optio. Nulla dicta aspernatur</p>
+            </div>
+            <div class="card-box"> <img style="padding: 0; margin: 0; width: 100%;" src="./image/ommat/kycklingben.jpg"
+                    alt="">
+                <p
+                    style="background-color: rgb(0, 0, 0); color:white; padding: 20px; text-align: justify;border: 5px solid rgb(255, 200, 0);">
+                    Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. Ratione eaque quasi tempora eveniet
+                    optio. Nulla dicta aspernatur</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-box"> <img style="padding: 0; margin: 0; width: 100%;" src="./image/ommat/pannkaka.jpg"
+                    alt="">
+                <p
+                    style="background-color: rgb(0, 0, 0); border: 5px solid rgb(255, 200, 0);color:white; padding: 20px; text-align: justify;">
+                    Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. Ratione eaque quasi tempora eveniet
+                    optio. Nulla dicta aspernatur</p>
+            </div>
+            <div class="card-box"> <img style="padding: 0; margin: 0; width: 100%;" src="./image/ommat/risgryta.jpg"
+                    alt="">
+                <p style="background-color: rgb(0, 0, 0); color:white; padding: 20px; text-align: justify;
+                border: 5px solid rgb(255, 200, 0); ">Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. Ratione eaque quasi tempora eveniet
+                    optio. Nulla dicta aspernatur</p>
+            </div>
+            <div class="card-box"><img style="padding: 0; margin: 0; width: 100%;" src="./image/ommat/rissoja.jpg"
+                    alt="">
+                <p
+                    style="background-color: rgb(0, 0, 0); color:white; padding: 20px; text-align: justify;border: 5px solid rgb(255, 200, 0);">
+                    Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. Ratione eaque quasi tempora eveniet
+                    optio. Nulla dicta aspernatur</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-box"> <img style="padding: 0; margin: 0; width: 100%;" src="./image/ommat/sallad1.jpg"
+                    alt="">
+                <p
+                    style="background-color: rgb(0, 0, 0); border: 5px solid rgb(255, 200, 0);color:white; padding: 20px; text-align: justify;">
+                    Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. Ratione eaque quasi tempora eveniet
+                    optio. Nulla dicta aspernatur</p>
+            </div>
+            <div class="card-box"> <img style="padding: 0; margin: 0; width: 100%;" src="./image/ommat/sallad2.jpg"
+                    alt="">
+                <p style="background-color: rgb(0, 0, 0); color:white; padding: 20px; text-align: justify;
+                        border: 5px solid rgb(255, 200, 0); ">Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. Ratione eaque quasi tempora eveniet
+                    optio. Nulla dicta aspernatur</p>
+            </div>
+            <div class="card-box"><img style="padding: 0; margin: 0; width: 100%;" src="./image/ommat/tofu.jpg" alt="">
+                <p
+                    style="background-color: rgb(0, 0, 0); color:white; padding: 20px; text-align: justify;border: 5px solid rgb(255, 200, 0);">
+                    Lorem
+                    ipsum dolor sit amet consectetur adipisicing elit. Ratione eaque quasi tempora eveniet
+                    optio. Nulla dicta aspernatur</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <div>
+                <ul class="foot">
+                    <li><a href="http://www.tierp.se">Tierp.se</a></li>
+                    <li><a href="http://webmenu.foodit.se/?r=3&m=360&p=580&c=10110&w=0&v=Week">Matsedel</a></li>
+                    <li><a
+                            href="https://www.tierp.se/tierp.se/forskola-och-utbildning/skolbarn-6-16-ar/mat-i-skolan.html">Specialkost</a>
+                    </li>
+                    <li><a href="./vem vi ar.html">About Us</a></li>
+                    <li><a href="https://www.livsmedelsverket.se/">Livsmedelsverket</a></li>
+                </ul>
+            </div>
+            <h5
+                style="text-align: center; font-size: 2vmin; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; background-color: rgb(0, 0, 0); color: white; padding: 30px;">
+                © 2022 Josef.Abliz
+                .All Rights reserved &nbsp TIERPS KOMMUN Centralskolankoket</h5>
+        </div>
+
+    </footer>
+</body>
+
+</html>
